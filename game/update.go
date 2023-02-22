@@ -57,6 +57,7 @@ func (state *Game) Update() {
 			Fight(param, state)
 		case "eat":
 			Eat(param, state)
+			
 		default:
 			fmt.Printf("'%s' is an invalid command\n", input)
 		}

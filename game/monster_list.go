@@ -5,14 +5,14 @@ func GetMonsterList() map[string]Player {
 		"slime": {
 			Name:    "Slime",
 			Life:    10,
+			XP:      5,
 			Gold:    1,
 			Attack:  3,
 			Defense: 1,
-			Mana: 3,
+			Mana:    3,
 			Food: map[string]int{
-				"plum": 1,
+				"plum":  1,
 				"apple": 1,
-				
 			},
 		},
 
@@ -22,7 +22,7 @@ func GetMonsterList() map[string]Player {
 			Gold:    3,
 			Attack:  3,
 			Defense: 1,
-			Mana: 5,
+			Mana:    5,
 			Food: map[string]int{
 				"apple": 1,
 			},
@@ -34,7 +34,7 @@ func GetMonsterList() map[string]Player {
 			Gold:    5,
 			Attack:  4,
 			Defense: 2,
-			Mana: 3,
+			Mana:    3,
 			Food: map[string]int{
 				"banana": 1,
 			},
@@ -46,7 +46,7 @@ func GetMonsterList() map[string]Player {
 			Gold:    7,
 			Attack:  3,
 			Defense: 2,
-			Mana: 3,
+			Mana:    3,
 			Food: map[string]int{
 				"alien-guts": 2,
 			},
@@ -58,7 +58,7 @@ func GetMonsterList() map[string]Player {
 			Gold:    2,
 			Attack:  3,
 			Defense: 1,
-			Mana: 2,
+			Mana:    2,
 			Food: map[string]int{
 				"cotton-candy": 1,
 			},
@@ -70,7 +70,7 @@ func GetMonsterList() map[string]Player {
 			Gold:    16,
 			Attack:  7,
 			Defense: 2,
-			Mana: 16,
+			Mana:    16,
 			Food: map[string]int{
 				"lemon": 1,
 			},
@@ -84,101 +84,98 @@ func GetMonsterList() map[string]Player {
 			Defense: 0,
 		},
 
-        "Dragon of doom": {
-			Name: "Dragon of doom",
-			Life: 13,
-			Gold: 11,
-			Attack: 5,
+		"Dragon of doom": {
+			Name:    "Dragon of doom",
+			Life:    13,
+			Gold:    11,
+			Attack:  5,
 			Defense: 2,
-			Mana: 9,
+			Mana:    9,
 			Food: map[string]int{
 				"sweet-fruit": 1,
 			},
-
 		},
 
 		"Evil broccoli": {
-			Name: "BOSS\nEvil broccoli",
-			Life: 21,
-			Gold: 15,
-			Attack: 6,
+			Name:    "BOSS\nEvil broccoli",
+			Life:    21,
+			Gold:    15,
+			Attack:  6,
 			Defense: 2,
-			Mana: 4,
+			Mana:    4,
 			Food: map[string]int{
 				"salad": 2,
 			},
 		},
 
 		"Burger of death": {
-			Name: "Burger of death",
-			Life: 13,
-			Gold: 4,
-			Attack: 4,
+			Name:    "Burger of death",
+			Life:    13,
+			Gold:    4,
+			Attack:  4,
 			Defense: 1,
-			Mana: 6,
+			Mana:    6,
 			Food: map[string]int{
 				"rainbow-hamburger": 1,
 			},
-
-
 		},
 
 		"Froggy": {
-			Name: "Froggy",
-			Life: 17,
-			Gold: 6,
-			Attack: 5,
+			Name:    "Froggy",
+			Life:    17,
+			Gold:    6,
+			Attack:  5,
 			Defense: 2,
-			Mana: 2,
+			Mana:    2,
 			Food: map[string]int{
-            "froggy-meat": 1,
-			"frog-legs": 1,
+				"froggy-meat": 1,
+				"frog-legs":   1,
 			},
 		},
 
 		"Blue Devil": {
-			Name: "Blue Devil",
-			Life: 14,
-			Gold: 8,
-			Attack: 3,
+			Name:    "Blue Devil",
+			Life:    14,
+			Gold:    8,
+			Attack:  3,
 			Defense: 1,
-			Mana: 5,
+			Mana:    5,
 			Food: map[string]int{
-			 "hot-dog": 1,
+				"hot-dog": 1,
 			},
 		},
 
 		"clown": {
-			Name: "clown",
-			Life: 19,
-			Gold: 5,
-			Attack: 5,
+			Name:    "clown",
+			Life:    19,
+			Gold:    5,
+			Attack:  5,
 			Defense: 1,
-			Mana: 2,
+			Mana:    2,
 			Food: map[string]int{
 				"magic-corn": 2,
 			},
 		},
 
 		"vicious dog": {
-			Name: "vicious dog",
-			Life: 19,
-			Gold: 3,
-			Attack: 6,
+			Name:    "vicious dog",
+			Life:    19,
+			Gold:    3,
+			Attack:  6,
 			Defense: 2,
-			Mana: 7,
+			Mana:    7,
 			Food: map[string]int{
-              "magic-corn": 2,
+				"magic-corn": 2,
 			},
 		},
 
 		"sorcerer": {
-			Name: "sorcerer",
-			Life: 21,
-			Gold: 7,
-			Attack: 8,
+			Name:    "sorcerer",
+			Life:    21,
+			Gold:    7,
+			Attack:  8,
 			Defense: 3,
-			Mana: 20,
+			Mana:    20,
 			Food: map[string]int{
 				"protien-orb": 1,
 			},

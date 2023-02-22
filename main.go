@@ -16,6 +16,7 @@ func main() {
 		Attack:  5,
 		Magic:   5,
 		Defense: 2,
+		Hydration: 100,
 		Food:    make(map[string]int),
 	}
 

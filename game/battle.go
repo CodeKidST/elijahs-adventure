@@ -53,6 +53,10 @@ func (state *Game) Battle(monster *Player) bool {
 			fmt.Printf("\tGot %d Mana!\n", monster.Mana)
 			state.Player.Gold += monster.Gold
 			state.Player.Mana += monster.Mana
+			fmt.Printf("\tGot %d XP!\n", monster.XP)
+			if state.Player.AddXP(monster.XP) {
+				fmt.Printf("you leveled up!\n your current level is now %d!", state.Player.Level)
+			}
 			for foodKey, foodAmount := range monster.Food {
 				fmt.Printf("\tGot %d %s!\n", foodAmount, state.food[foodKey])
 				state.Player.Food[foodKey] += foodAmount

@@ -201,7 +201,7 @@ func GetMap() map[string]Room {
 
 		"sorcerers-tower": {
 			Name:    "sorcerers tower",
-			Item:    22,
+			Item:    22, 
 			Monster: "sorcerer",
 			North:   "atl",
 			South:   "dcave",

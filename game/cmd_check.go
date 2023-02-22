@@ -17,6 +17,11 @@ func Check(param string, state *Game) {
 		checkAllies(state)
 	case "mana":
 		checkMana(state)
+	case "hydration":
+		checkHydration(state)
+	case "status":
+		checkStatus(state)
+    
 	default:
 		fmt.Printf("That's not a valid command!\n")
 	}
@@ -57,4 +62,23 @@ func checkAllies(state *Game) {
 
 func checkMana(state *Game) {
 	fmt.Printf("You have %d mana!\n", state.Player.Mana)
+}
+
+func checkHydration(state *Game) {
+	fmt.Printf("you are %d hydrated", state.Player.Hydration)
+	if state.Player.Hydration <= 0 {
+		state.Player.Life = 0
+		fmt.Printf("GAME OVER\n You have died from thirst")
+	}
+}
+
+func checkStatus(state *Game) {
+	fmt.Printf("Player Status\n")
+	fmt.Printf("-------------\n")
+	fmt.Printf("\tHP: %d\n", state.Player.Life)
+	fmt.Printf("\tAtk: %d\n", state.Player.Attack)
+	fmt.Printf("\tDef: %d\n", state.Player.Defense)
+	fmt.Printf("\tMana: %d\n", state.Player.Mana)
+	fmt.Printf("\nHydration: %d\n", state.Player.Hydration)
+
 }
